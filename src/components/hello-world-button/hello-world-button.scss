@@ -1,6 +1,6 @@
 $font-size: 20px;
 $button-background-color: green;
-$button-font-color: black;
+$button-font-color: white;
 $text-font-color: red;
 
 .hello-world-button {
@@ -12,6 +12,6 @@ $text-font-color: red;
 }
 
 .hello-world-text {
-  color: $button-font-color;
+  color: $text-font-color:;
   font-weight: bold;
 }
