@@ -1,4 +1,5 @@
 const path = require("path");
+const TerserPlugin = require("terser-webpack-plugin");
 
 module.exports = {
   entry: "./src/index.js",
@@ -8,6 +9,10 @@ module.exports = {
     publicPath: "http://dreamsandcode.com/",
   },
   mode: "none",
+  watch: true,
+  watchOptions: {
+    ignored: "/node_modules/",
+  },
   module: {
     rules: [
       {
@@ -35,4 +40,5 @@ module.exports = {
       },
     ],
   },
+  plugins: [new TerserPlugin()],
 };
